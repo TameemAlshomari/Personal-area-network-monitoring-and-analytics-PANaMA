@@ -1,0 +1,32 @@
+2021-12-13T22:52:33.095+0100	INFO	instance/beat.go:660	Home path: [C:\Users\Tameem\Desktop\Metricbeat] Config path: [C:\Users\Tameem\Desktop\Metricbeat] Data path: [C:\Users\Tameem\Desktop\Metricbeat\data] Logs path: [C:\Users\Tameem\Desktop\Metricbeat\logs]
+2021-12-13T22:52:33.102+0100	INFO	instance/beat.go:668	Beat ID: cddd2663-a994-4f26-8550-77046d6a397f
+2021-12-13T22:52:33.157+0100	INFO	[beat]	instance/beat.go:996	Beat info	{"system_info": {"beat": {"path": {"config": "C:\\Users\\Tameem\\Desktop\\Metricbeat", "data": "C:\\Users\\Tameem\\Desktop\\Metricbeat\\data", "home": "C:\\Users\\Tameem\\Desktop\\Metricbeat", "logs": "C:\\Users\\Tameem\\Desktop\\Metricbeat\\logs"}, "type": "metricbeat", "uuid": "cddd2663-a994-4f26-8550-77046d6a397f"}}}
+2021-12-13T22:52:33.157+0100	INFO	[beat]	instance/beat.go:1005	Build info	{"system_info": {"build": {"commit": "08e20483a651ea5ad60115f68ff0e53e6360573a", "libbeat": "7.12.0", "time": "2021-03-18T06:28:33.000Z", "version": "7.12.0"}}}
+2021-12-13T22:52:33.157+0100	INFO	[beat]	instance/beat.go:1008	Go runtime info	{"system_info": {"go": {"os":"windows","arch":"amd64","max_procs":8,"version":"go1.15.8"}}}
+2021-12-13T22:52:33.158+0100	INFO	[add_cloud_metadata]	add_cloud_metadata/add_cloud_metadata.go:101	add_cloud_metadata: hosting provider type not detected.
+2021-12-13T22:52:33.184+0100	INFO	[beat]	instance/beat.go:1012	Host info	{"system_info": {"host": {"architecture":"x86_64","boot_time":"2021-12-11T21:50:24.34+01:00","name":"DESKTOP-C8ME1NJ","ip":["fe80::f535:db2e:a920:d89/64","169.254.13.137/16","fe80::f58c:9497:bc17:23a/64","172.26.144.1/20","fe80::3142:dcd0:3416:b23b/64","169.254.178.59/16","fe80::39f8:4ab6:5bc8:d81d/64","169.254.216.29/16","2a02:ab88:c81:7380::b144/128","2a02:ab88:c81:7380:2e:f2af:818c:8e49/64","2a02:ab88:c81:7380:d8af:c5:1d66:b9f7/128","fe80::2e:f2af:818c:8e49/64","192.168.0.102/24","::1/128","127.0.0.1/8","fe80::3cb8:3295:403:35/64","172.22.240.1/20"],"kernel_version":"10.0.19041.1348 (WinBuild.160101.0800)","mac":["f0:2f:74:a5:41:67","00:15:5d:2e:d1:19","ee:2e:98:53:ae:b9","fe:2e:98:53:ae:b9","ec:2e:98:53:ae:b9","00:15:5d:c4:0b:ec"],"os":{"type":"windows","family":"windows","platform":"windows","name":"Windows 10 Pro","version":"10.0","major":10,"minor":0,"patch":0,"build":"19043.1348"},"timezone":"CET","timezone_offset_sec":3600,"id":"65fc8418-6250-4448-8dee-e4f63586e6f6"}}}
+2021-12-13T22:52:33.185+0100	INFO	[beat]	instance/beat.go:1041	Process info	{"system_info": {"process": {"cwd": "C:\\Users\\Tameem\\Desktop\\Metricbeat", "exe": "C:\\Users\\Tameem\\Desktop\\Metricbeat\\metricbeat.exe", "name": "metricbeat.exe", "pid": 21644, "ppid": 12180, "start_time": "2021-12-13T22:52:32.444+0100"}}}
+2021-12-13T22:52:33.185+0100	INFO	instance/beat.go:304	Setup Beat: metricbeat; Version: 7.12.0
+2021-12-13T22:52:33.185+0100	INFO	[index-management]	idxmgmt/std.go:184	Set output.elasticsearch.index to 'metricbeat-7.12.0' as ILM is enabled.
+2021-12-13T22:52:33.186+0100	INFO	eslegclient/connection.go:99	elasticsearch url: http://localhost:9200
+2021-12-13T22:52:33.186+0100	INFO	[publisher]	pipeline/module.go:113	Beat name: DESKTOP-C8ME1NJ
+2021-12-13T22:52:33.224+0100	INFO	eslegclient/connection.go:99	elasticsearch url: http://localhost:9200
+2021-12-13T22:52:33.268+0100	INFO	[esclientleg]	eslegclient/connection.go:314	Attempting to connect to Elasticsearch version 7.9.0
+2021-12-13T22:52:33.285+0100	INFO	[index-management]	idxmgmt/std.go:261	Auto ILM enable success.
+2021-12-13T22:52:33.296+0100	INFO	[index-management.ilm]	ilm/std.go:139	do not generate ilm policy: exists=true, overwrite=false
+2021-12-13T22:52:33.296+0100	INFO	[index-management]	idxmgmt/std.go:274	ILM policy successfully loaded.
+2021-12-13T22:52:33.296+0100	INFO	[index-management]	idxmgmt/std.go:407	Set setup.template.name to '{metricbeat-7.12.0 {now/d}-000001}' as ILM is enabled.
+2021-12-13T22:52:33.296+0100	INFO	[index-management]	idxmgmt/std.go:412	Set setup.template.pattern to 'metricbeat-7.12.0-*' as ILM is enabled.
+2021-12-13T22:52:33.296+0100	INFO	[index-management]	idxmgmt/std.go:446	Set settings.index.lifecycle.rollover_alias in template to {metricbeat-7.12.0 {now/d}-000001} as ILM is enabled.
+2021-12-13T22:52:33.296+0100	INFO	[index-management]	idxmgmt/std.go:450	Set settings.index.lifecycle.name in template to {metricbeat {"policy":{"phases":{"hot":{"actions":{"rollover":{"max_age":"30d","max_size":"50gb"}}}}}}} as ILM is enabled.
+2021-12-13T22:52:33.308+0100	INFO	template/load.go:183	Existing template will be overwritten, as overwrite is enabled.
+2021-12-13T22:52:33.567+0100	INFO	template/load.go:117	Try loading template metricbeat-7.12.0 to Elasticsearch
+2021-12-13T22:52:34.336+0100	INFO	template/load.go:109	template with name 'metricbeat-7.12.0' loaded.
+2021-12-13T22:52:34.336+0100	INFO	[index-management]	idxmgmt/std.go:298	Loaded index template.
+2021-12-13T22:52:34.343+0100	INFO	[index-management]	idxmgmt/std.go:309	Write alias successfully generated.
+2021-12-13T22:52:34.344+0100	INFO	kibana/client.go:119	Kibana url: http://localhost:5601
+2021-12-13T22:52:34.768+0100	INFO	kibana/client.go:119	Kibana url: http://localhost:5601
+2021-12-13T22:54:16.590+0100	ERROR	instance/beat.go:971	Exiting: Failed to import dashboard: Failed to load directory C:\Users\Tameem\Desktop\Metricbeat\kibana/7/dashboard:
+  error loading C:\Users\Tameem\Desktop\Metricbeat\kibana\7\dashboard\Metricbeat-aws-s3-overview.json: returned 500 to import file: <nil>. Response: {"statusCode":500,"error":"Internal Server Error","message":"An internal server error occurred."}
+  error loading C:\Users\Tameem\Desktop\Metricbeat\kibana\7\dashboard\Metricbeat-awsfargate-overview.json: returned 500 to import file: <nil>. Response: {"statusCode":500,"error":"Internal Server Error","message":"An internal server error occurred."}
+  error loading C:\Users\Tameem\Desktop\Metricbeat\kibana\7\dashboard\Metricbeat-nats-overview.json: returned 500 to import file: <nil>. Response: {"statusCode":500,"error":"Internal Server Error","message":"An internal server error occurred."}
