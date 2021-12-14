@@ -29,5 +29,7 @@ You can use the CLI to run different queries for InfluxDB Database for example,
 
 ```bash
 docker exec influxdb influx -execute 'SHOW DATABASES' 
+docker exec influxdb influx -execute 'SHOW MEASUREMENTS ON dbinflux'
+docker exec influxdb influx -execute 'SHOW SERIES ON dbinflux'
 ```
 You can use the Docker Daemon to find the logs in the volume field. 
